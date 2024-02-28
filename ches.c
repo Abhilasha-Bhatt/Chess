@@ -58,26 +58,28 @@ int moveCheck(int fromR,int fromC,int toC,int toR,char player)
     if((board[fromR][fromC]==' ')||(player=='w'&&islower(board[fromR][fromC]))||(player=='b'&&isupper(board[fromR][fromC])))
     return 0;
 
-    if(board[fromR][fromC]=='r'||board[fromR][fromC]=='R')
+    if(board[fromR][fromC]=='r'||board[fromR][fromC]=='R')//rook
     {
         if((fromR==toR||fromC==toC))
         return 1;
     }
 
-    if(board[fromR][fromC]=='n'||board[fromR][fromC]=='N')
+    if(board[fromR][fromC]=='n'||board[fromR][fromC]=='N')//knight
     {
         if((abs(fromR-toR)==1||abs(fromR-toR)==2)&&(abs(fromR-toR)==1||abs(fromR-toR)==2))
         return 1;
     }
 
-    if(board[fromR][fromC]=='b'||board[fromR][fromC]=='B')
+    if(board[fromR][fromC]=='b'||board[fromR][fromC]=='B')//bishop
     {
-        if(fromR!=toR&&fromC!=toC) /**  HIGHLIGHT*/
+        if(fromR!=toR&&fromC!=toC&&((abs)(fromR-toR)==(abs)(fromC-toC))) 
         return 1;
     }
 
-    if(board[fromR][fromC]=='p'||board[fromR][fromC]=='P')
-
+    if(board[fromR][fromC]=='p'||board[fromR][fromC]=='P')//pawn
+    {
+        if()
+    }
 
 }
 
