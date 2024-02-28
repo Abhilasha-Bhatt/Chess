@@ -66,7 +66,7 @@ int moveCheck(int fromR,int fromC,int toC,int toR,char player)
 
     if(board[fromR][fromC]=='n'||board[fromR][fromC]=='N')//knight
     {
-        if((abs(fromR-toR)==1||abs(fromR-toR)==2)&&(abs(fromR-toR)==1||abs(fromR-toR)==2))
+        if((abs(fromR-toR)==1||abs(fromR-toR)==2)&&(abs(fromC-toC)==1||abs(fromC-toC)==2))
         return 1;
     }
 
@@ -78,9 +78,22 @@ int moveCheck(int fromR,int fromC,int toC,int toR,char player)
 
     if(board[fromR][fromC]=='p'||board[fromR][fromC]=='P')//pawn
     {
-        if()
+        if((abs(fromR-toR)==1||abs(fromR-toR)==2)||(abs(fromR-toR)==1||abs(fromR-toR)==2))
+        return 1;
     }
 
+    if(board[fromR][fromC]=='k'||board[fromR][fromC]=='K')//king
+    {
+        if((abs)(fromR-toR)==1||(abs(fromC-toC)==1))
+        return 1;
+    }
+
+    if(board[fromR][fromC]=='q'||board[fromR][fromC]=='Q')//queen
+    {
+        if(((fromR==toR||fromC==toC))||((abs(fromR-toR)==1||abs(fromR-toR)==2)&&(abs(fromC-toC)==1||abs(fromC-toC)==2))||(fromR!=toR&&fromC!=toC&&((abs)(fromR-toR)==(abs)(fromC-toC)))||((abs(fromR-toR)==1||abs(fromR-toR)==2)||(abs(fromR-toR)==1||abs(fromR-toR)==2))||((abs)(fromR-toR)==1||(abs(fromC-toC)==1)))
+        return 1;
+    }
+    return 0;
 }
 
 int main()
