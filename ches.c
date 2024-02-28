@@ -95,7 +95,11 @@ int moveCheck(int fromR,int fromC,int toC,int toR,char player)
     }
     return 0;
 }
-
+void makemove(int fromR,int toR,int fromC,int toC)
+{
+    board[toR][toC]=board[fromR][fromC];
+    board[fromR][fromC]=' ';
+}
 int main()
 {
 
@@ -121,6 +125,9 @@ int main()
             continue;
         }
 
+        makemove(fromR,toR,fromC,toC);
+        player = (player == 'w') ? 'b' : 'w';
 
     }
+    return 0;
 }
