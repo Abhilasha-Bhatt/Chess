@@ -59,41 +59,24 @@ int moveCheck(int fromR,int fromC,int toC,int toR,char player)
 {
     if((board[fromR][fromC]==' ')||(player=='w'&&islower(board[fromR][fromC]))||(player=='b'&&isupper(board[fromR][fromC])))
     return 0;
-    if(board[fromR][fromC]=='r'||board[fromR][fromC]=='R')//rook
-    {
-        if((fromR==toR||fromC==toC))
-        return 1;
-    }
+    if((board[fromR][fromC]=='r'||board[fromR][fromC]=='R')&&((fromR==toR||fromC==toC)))//rook
+    return 1;
 
-    if(board[fromR][fromC]=='n'||board[fromR][fromC]=='N')//knight
-    {
-        if((abs(fromR-toR)==1||abs(fromR-toR)==2)&&(abs(fromC-toC)==1||abs(fromC-toC)==2))
-        return 1;
-    }
+    if((board[fromR][fromC]=='n'||board[fromR][fromC]=='N')&&((abs(fromR-toR)==1||abs(fromR-toR)==2)&&(abs(fromC-toC)==1||abs(fromC-toC)==2)))//knight
+    return 1;
 
-    if(board[fromR][fromC]=='b'||board[fromR][fromC]=='B')//bishop
-    {
-        if(fromR!=toR&&fromC!=toC&&((abs)(fromR-toR)==(abs)(fromC-toC))) 
-        return 1;
-    }
+    if((board[fromR][fromC]=='b'||board[fromR][fromC]=='B')&&(fromR!=toR&&fromC!=toC&&((abs)(fromR-toR)==(abs)(fromC-toC))))//bishop
+    return 1;
 
-    if(board[fromR][fromC]=='p'||board[fromR][fromC]=='P')//pawn
-    {
-        if((abs(fromR-toR)==1||abs(fromR-toR)==2)||(abs(fromR-toR)==1||abs(fromR-toR)==2))
-        return 1;
-    }
+    if((board[fromR][fromC]=='p'||board[fromR][fromC]=='P')&&((abs(fromR-toR)==1||abs(fromR-toR)==2)||(abs(fromR-toR)==1||abs(fromR-toR)==2)))//pawn
+    return 1;
 
-    if(board[fromR][fromC]=='k'||board[fromR][fromC]=='K')//king
-    {
-        if((abs)(fromR-toR)==1||(abs(fromC-toC)==1))
-        return 1;
-    }
+    if((board[fromR][fromC]=='k'||board[fromR][fromC]=='K')&&((abs)(fromR-toR)==1||(abs(fromC-toC)==1)))//king
+    return 1;
 
-    if(board[fromR][fromC]=='q'||board[fromR][fromC]=='Q')//queen
-    {
-        if(((fromR==toR||fromC==toC))||((abs(fromR-toR)==1||abs(fromR-toR)==2)&&(abs(fromC-toC)==1||abs(fromC-toC)==2))||(fromR!=toR&&fromC!=toC&&((abs)(fromR-toR)==(abs)(fromC-toC)))||((abs(fromR-toR)==1||abs(fromR-toR)==2)||(abs(fromR-toR)==1||abs(fromR-toR)==2))||((abs)(fromR-toR)==1||(abs(fromC-toC)==1)))
-        return 1;
-    }
+    if((board[fromR][fromC]=='q'||board[fromR][fromC]=='Q')&&(((fromR==toR||fromC==toC))||((abs(fromR-toR)==1||abs(fromR-toR)==2)&&(abs(fromC-toC)==1||abs(fromC-toC)==2))||(fromR!=toR&&fromC!=toC&&((abs)(fromR-toR)==(abs)(fromC-toC)))||((abs(fromR-toR)==1||abs(fromR-toR)==2)||(abs(fromR-toR)==1||abs(fromR-toR)==2))||((abs)(fromR-toR)==1||(abs(fromC-toC)==1))))//queen
+    return 1;
+
     return 0;
 }
 
