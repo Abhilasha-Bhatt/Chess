@@ -40,6 +40,8 @@ void display()
         printf(" %c |", board[i][j]);
         printf("\n +---------------------------------+\n");
     }
+    printf("    a    b   c   d   e   f   g   h\n");
+
 }
 
 int validMove(char* move,int* col,int* row)
@@ -52,31 +54,11 @@ int validMove(char* move,int* col,int* row)
     }
     return 0;
 }
-/**bool parse_move(char* move, int* row, int* col) {
-    if (move[0] >= 'a' && move[0] <= 'h' && move[1] >= '1' && move[1] <= '8') {
-        *row = 8 - (move[1] - '0');
-        *col = move[0] - 'a';
-        return true;
-    }
-    return false;
-}*/
 
 int moveCheck(int fromR,int fromC,int toC,int toR,char player)
 {
     if((board[fromR][fromC]==' ')||(player=='w'&&islower(board[fromR][fromC]))||(player=='b'&&isupper(board[fromR][fromC])))
     return 0;
-/**bool is_valid_move(int from_row, int from_col, int to_row, int to_col, char player) {
-    // Check if the starting position contains the player's piece
-    if (board[from_row][from_col] == ' ') {
-        return false;
-    }
-    if ((player == 'w' && islower(board[from_row][from_col])) || (player == 'b' && isupper(board[from_row][from_col]))) {
-        return false;
-    }
-    // TODO: Implement rules for valid moves (for simplicity, allow any move for now)
-    return true;
-}
-*/
     if(board[fromR][fromC]=='r'||board[fromR][fromC]=='R')//rook
     {
         if((fromR==toR||fromC==toC))
@@ -124,7 +106,8 @@ int main()
 
     initialize();
     char player='w';
-    while(1)
+    int c=1;
+    while(c)
     {
         display();
         printf("Player %c 's turn",player);
@@ -147,6 +130,9 @@ int main()
 
         makemove(fromR,toR,fromC,toC);
         player = (player == 'w') ? 'b' : 'w';
+        printf("To end the game enter 0 to continue enter 1");
+        scanf("%d",&c);
+
 
     }
     return 0;
