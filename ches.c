@@ -95,8 +95,8 @@ int main()
     while(c)
     {
         display();
-        printf("Player %c 's turn",player);
-        printf("Enter Your Move (eg: a2a5)");
+        printf("Player %c 's turn\n",player);
+        printf("\nEnter Your Move (eg: a2a5)");
         char move[4];
         scanf("%s",move);
 
@@ -115,7 +115,7 @@ int main()
 
         makemove(fromR,toR,fromC,toC);
         player = (player == 'w') ? 'b' : 'w';
-        printf("To end the game enter 0 to continue enter 1");
+        printf("\nTo end the game enter 0 to continue enter 1\n");
         scanf("%d",&c);
 
 
