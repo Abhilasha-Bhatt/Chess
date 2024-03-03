@@ -94,7 +94,6 @@ int main()
     while(1)
     {
         display();
-        printf("Player %c 's turn\n",player);
         printf("\nEnter Your Move (eg: a2a5)");
         char move[4];
         scanf("%s",move);
@@ -113,8 +112,7 @@ int main()
         }
 
         makemove(fromR,toR,fromC,toC);
-        player = (player == 'w') ? 'b' : 'w';
-
+        
 
     }
     return 0;
