@@ -112,7 +112,6 @@ int main()
         }
 
         makemove(fromR,toR,fromC,toC);
-        
 
     }
     return 0;
