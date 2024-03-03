@@ -91,8 +91,7 @@ int main()
 
     initialize();
     char player='w';
-    int c=1;
-    while(c)
+    while(1)
     {
         display();
         printf("Player %c 's turn\n",player);
@@ -115,8 +114,6 @@ int main()
 
         makemove(fromR,toR,fromC,toC);
         player = (player == 'w') ? 'b' : 'w';
-        printf("\nTo end the game enter 0 to continue enter 1\n");
-        scanf("%d",&c);
 
 
     }
