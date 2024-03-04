@@ -16,21 +16,13 @@ Welcome to Chess Master 3000, a classic chess game implemented in C! Challenge y
 3. **Run:** Execute the compiled program to start playing chess!
 4. **Enter Moves:** Enter your moves in the format `fromSquareToSquare` (e.g., `a2a4`).
 5. **Enjoy:** Immerse yourself in the world of chess and experience the excitement of strategic gameplay.
-
-## Screenshots
-
-![Chess Master 3000](screenshots/chess_master_3000.png)
-
 ## Contributions
 
 Contributions to Chess Master 3000 are welcome! Whether you want to fix bugs, add new features, or improve the documentation, your contributions will help make the game even better for players around the world.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## About the Author
 
-Chess Master 3000 is created and maintained by [Your Name]. Connect with me on [LinkedIn](https://www.linkedin.com/in/your-profile) for more exciting projects and collaborations.
+Chess Master 3000 is created and maintained by [Abhilasha]. Connect with me on [LinkedIn](https://www.linkedin.com/in/abhilasha-bhatt3) for more exciting projects and collaborations.
+GMAIL: abhilashabhatt77@gmail.com
 
 Let's play some chess and master the game together!
