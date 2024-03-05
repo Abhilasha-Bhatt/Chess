@@ -16,6 +16,39 @@ Welcome to Chess Master, a classic chess game implemented in C! Challenge your s
 3. **Run:** Execute the compiled program to start playing chess!
 4. **Enter Moves:** Enter your moves in the format `fromSquareToSquare` (e.g., `a2a4`).
 5. **Enjoy:** Immerse yourself in the world of chess and experience the excitement of strategic gameplay.
+     RULES FOR GAME!
+## Console
+```
+1.Small letter denotes black player while the capital letter denotes white player
+2.r-rook        n-knight        b-bishop
+ k-king q-queen p-pawn
+3.The first type the from column of then from row then the destined column and destined row
+4.Avoid making invalid moves
+
+                ^_^HAPPY PLAYING ^_^
+
+    a    b   c   d   e   f   g   h
+ +---------------------------------+
+ 8 | r | n | b | q | k | b | n | r |
+ +---------------------------------+
+ 7 | p | p | p | p | p | p | p | p |
+ +---------------------------------+
+ 6 |   |   |   |   |   |   |   |   |
+ +---------------------------------+
+ 5 |   |   |   |   |   |   |   |   |
+ +---------------------------------+
+ 4 |   |   |   |   |   |   |   |   |
+ +---------------------------------+
+ 3 |   |   |   |   |   |   |   |   |
+ +---------------------------------+
+ 2 | P | P | P | P | P | P | P | P |
+ +---------------------------------+
+ 1 | R | N | B | Q | K | B | N | R |
+ +---------------------------------+
+    a    b   c   d   e   f   g   h
+
+Enter Your Move (eg: a2a5)
+```
 
 ## Files
 
