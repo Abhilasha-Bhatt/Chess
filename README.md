@@ -1,6 +1,6 @@
-# Chess Master 3000
+# Chess Master
 
-Welcome to Chess Master 3000, a classic chess game implemented in C! Challenge your strategic skills and immerse yourself in the timeless game of kings and queens.
+Welcome to Chess Master, a classic chess game implemented in C! Challenge your strategic skills and immerse yourself in the timeless game of kings and queens.
 
 ## Features
 
@@ -16,13 +16,24 @@ Welcome to Chess Master 3000, a classic chess game implemented in C! Challenge y
 3. **Run:** Execute the compiled program to start playing chess!
 4. **Enter Moves:** Enter your moves in the format `fromSquareToSquare` (e.g., `a2a4`).
 5. **Enjoy:** Immerse yourself in the world of chess and experience the excitement of strategic gameplay.
+
+## Files
+
+- `ches.c`: Conatins Source code .
+- `README.md`: This file, provding information about the project.
+
+## Author
+
+- ABHILASHA
+  
+## Contacts
+
+- Gmail: abhilashabhatt77@gmail.com
+- Github: [Click here](https://github.com/Abhilasha-Bhatt)
+- LinkedIn: [Click here](https://www.linkedin.com/in/abhilasha-bhatt3)
+
 ## Contributions
 
 Contributions to Chess Master 3000 are welcome! Whether you want to fix bugs, add new features, or improve the documentation, your contributions will help make the game even better for players around the world.
-
-## About the Author
-
-Chess Master 3000 is created and maintained by [Abhilasha]. Connect with me on [LinkedIn](https://www.linkedin.com/in/abhilasha-bhatt3) for more exciting projects and collaborations.
-GMAIL: abhilashabhatt77@gmail.com
 
 Let's play some chess and master the game together!
