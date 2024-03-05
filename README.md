@@ -3,8 +3,7 @@
 Welcome to Chess Master, a classic chess game implemented in C! Challenge your strategic skills and immerse yourself in the timeless game of kings and queens.
 
 ## Features
-
-- **Interactive Gameplay:** Experience the thrill of playing chess against a computer opponent right from your terminal.
+- **Two player game:** Enjoy the game with your friend. 
 - **User-Friendly Interface:** Simple and intuitive controls make it easy for players of all skill levels to enjoy the game.
 - **Rule-Based Moves:** Validate your moves according to the rules of chess, ensuring a fair and authentic gaming experience.
 - **Sleek Display:** Enjoy a visually appealing display of the chessboard with ASCII art, bringing the game to life on your screen.
@@ -16,9 +15,10 @@ Welcome to Chess Master, a classic chess game implemented in C! Challenge your s
 3. **Run:** Execute the compiled program to start playing chess!
 4. **Enter Moves:** Enter your moves in the format `fromSquareToSquare` (e.g., `a2a4`).
 5. **Enjoy:** Immerse yourself in the world of chess and experience the excitement of strategic gameplay.
-     RULES FOR GAME!
+     
 ## Console
 ```
+                    RULES FOR GAME!
 1.Small letter denotes black player while the capital letter denotes white player
 2.r-rook        n-knight        b-bishop
  k-king q-queen p-pawn
