@@ -88,7 +88,8 @@ void makemove(int fromR,int toR,int fromC,int toC)
 
 int main()
 {
-
+    printf("\n\n\t\tRULES FOR GAME!\n\n1.Small letter denotes black player while the capital letter denotes white player\n2.r-rook\tn-knight\tb-bishop\n k-king\tq-queen\tp-pawn\n");
+    printf("3.The first type the from column of then from row then the destined column and destined row\n4.Avoid making invalid moves\n\n\t\t^_^HAPPY PLAYING ^_^\n\n");
     initialize();
     char player='w';
     while(1)
@@ -112,6 +113,7 @@ int main()
         }
 
         makemove(fromR,toR,fromC,toC);
+        player=(player=='w')?'b':'w';
 
     }
     return 0;
