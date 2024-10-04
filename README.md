@@ -10,7 +10,7 @@ Welcome to Chess Master, a classic chess game implemented in C! Challenge your s
 
 ## How to Play
 
-1. **Download:** Clone or download the repository to your local machine.
+1. **Download:** Download the zip folder from *Download link* section.
 2. **Compile:** Compile the source code using your preferred C compiler.
 3. **Run:** Execute the compiled program to start playing chess!
 4. **Enter Moves:** Enter your moves in the format `fromSquareToSquare` (e.g., `a2a4`).
@@ -54,11 +54,13 @@ Enter Your Move (eg: a2a5)
 
 - `ches.c`: Conatins Source code .
 - `README.md`: This file, provding information about the project.
+## Download link.
 
-## Author
+[Click here to download](https://github.com/Abhilasha-Bhatt/Chess/releases/tag/Chess)
 
-- ABHILASHA
-  
+## Credits
+Created by [![ABHILASHA](https://img.shields.io/badge/ABHILASHA-Profile-blue?style=for-the-badge)](https://www.linkedin.com/in/abhilasha-bhatt3/)
+
 ## Contacts
 
 - Gmail: abhilashabhatt77@gmail.com
